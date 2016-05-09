@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>User Interaction</title>
+    </head>
+    <body>
+        <script>
+            //var confirmed = confirm("Are you sure you want to leave this page?");
+            //if (confirmed) {
+            //    console.log("OK");
+            //} else {
+            //    console.log("Cancel");
+            //}
+            //var response = prompt('What is your favorite color?');
+            //alert('Awesome, ' + response + ' is my favorite color too!');
+            
+ // TODO: Ask the user for their name.
+//       Keep asking if an empty input is provided.
+
+// TODO: Show an alert message that welcomes the user based on their input.           
+            "use strict";
+            var name= prompt('What is your name?');
+            while (name === "") {
+                name= prompt('Please tell me your name.')
+            }
+             alert('Hey there, ' + name + '!');
+// TODO: Ask the user if they like pizza.
+//       Based on their answer show a creative alert message.            
+            var confirmed = confirm(name +', do you like pizza?');
+            if (confirmed) {
+                console.log('Of course you like pizza! Everyone does!');
+            } else {
+                console.log('Then you have been eating pizza from the wrong places!');
+            }
+        </script>
+    </body>
+</html>

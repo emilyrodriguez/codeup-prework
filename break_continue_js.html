@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Page Break/Continue JS</title>
+    </head>
+    <body>
+        <script>
+            var random= Math.floor ((Math.random()*50)+1);
+                console.log("Random odd number to skip is: " + random);
+            for (var i = 1; i < 100; i++) {
+                if (i % 2 === 0) {
+//                    skip the even numbers
+                    continue;
+                }
+                if (random === i) {
+                    console.log("Yikes! Skipping number: " + i);
+                } else {
+                     console.log("Here is an odd number: " +i); 
+                }
+                if (i >= 49) {
+                    break;
+                }
+            }
+            
+            
+            
+            
+            //var i = 0;
+            //while (i < 10) {
+            //    i++;
+            //    if (i == 5) {
+            //        continue;
+            //    }
+            //    console.log(i);
+            //}
+            //console.log("all done");
+        </script>
+    </body>
+</html>
